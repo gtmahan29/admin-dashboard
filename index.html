@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پنل ادمین</title>
+    <link rel="stylesheet" href="./components/bootstrap/dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="./assets/scss/style.css">
+</head>
+<body>
+    <!-- سایدبار -->
+    <aside class="sidebar">
+        <div class="sidebar-wrapper">
+            <!-- دکمه سایدبار -->
+            <!-- لوگو و برند -->
+            <div class="brand">
+                <a href="#">
+                    <img src="./assets/img/logo.png" alt="">
+                </a>
+                <a href="#" class="brand-link">آرامیس</a>
+                <button class="sidebar-toggle">
+                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                </button>
+            </div>
+            <div class="sidebar-menu">
+                <ul class="side-menu-top">
+                    <li class="active">
+                        <a href="#">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"></path></svg>
+                            <span>داشبورد</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg stroke="currentColor" fill="none" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"></path></svg>               
+                            <span>سفارش‌ها</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M8 1a2 2 0 0 1 2 2v2H6V3a2 2 0 0 1 2-2zm3 4V3a3 3 0 1 0-6 0v2H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5H11zm-1 1v1.5a.5.5 0 0 0 1 0V6h1.639a.5.5 0 0 1 .494.426l1.028 6.851A1.5 1.5 0 0 1 12.678 15H3.322a1.5 1.5 0 0 1-1.483-1.723l1.028-6.851A.5.5 0 0 1 3.36 6H5v1.5a.5.5 0 1 0 1 0V6h4z"></path></svg>
+                            <span>محصولات</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M3.5 8a5.5 5.5 0 1 1 8.596 4.547 9.005 9.005 0 0 1 5.9 8.18.751.751 0 0 1-1.5.045 7.5 7.5 0 0 0-14.993 0 .75.75 0 0 1-1.499-.044 9.005 9.005 0 0 1 5.9-8.181A5.496 5.496 0 0 1 3.5 8ZM9 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm8.29 4c-.148 0-.292.01-.434.03a.75.75 0 1 1-.212-1.484 4.53 4.53 0 0 1 3.38 8.097 6.69 6.69 0 0 1 3.956 6.107.75.75 0 0 1-1.5 0 5.193 5.193 0 0 0-3.696-4.972l-.534-.16v-1.676l.41-.209A3.03 3.03 0 0 0 17.29 8Z"></path></svg>
+                            <span>مشتریان</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-"></i><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                            <span>گزارش‌ها</span>
+                        </a>
+                    </li>   
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-"></i><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><g id="Wallet"><g><path d="M19.435,4.065H4.565a2.5,2.5,0,0,0-2.5,2.5v10.87a2.5,2.5,0,0,0,2.5,2.5h14.87a2.5,2.5,0,0,0,2.5-2.5V6.565A2.5,2.5,0,0,0,19.435,4.065Zm1.5,9.93h-6.42a2,2,0,0,1,0-4h6.42Zm-6.42-5a3,3,0,0,0,0,6h6.42v2.44a1.5,1.5,0,0,1-1.5,1.5H4.565a1.5,1.5,0,0,1-1.5-1.5V6.565a1.5,1.5,0,0,1,1.5-1.5h14.87a1.5,1.5,0,0,1,1.5,1.5v2.43Z"></path><circle cx="14.519" cy="11.996" r="1"></circle></g></g></svg>
+                            <span>تراکنش‌ها</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="side-menu-bottom">
+                    <li>
+                        <a href="#">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M262.29 192.31a64 64 0 1057.4 57.4 64.13 64.13 0 00-57.4-57.4zM416.39 256a154.34 154.34 0 01-1.53 20.79l45.21 35.46a10.81 10.81 0 012.45 13.75l-42.77 74a10.81 10.81 0 01-13.14 4.59l-44.9-18.08a16.11 16.11 0 00-15.17 1.75A164.48 164.48 0 01325 400.8a15.94 15.94 0 00-8.82 12.14l-6.73 47.89a11.08 11.08 0 01-10.68 9.17h-85.54a11.11 11.11 0 01-10.69-8.87l-6.72-47.82a16.07 16.07 0 00-9-12.22 155.3 155.3 0 01-21.46-12.57 16 16 0 00-15.11-1.71l-44.89 18.07a10.81 10.81 0 01-13.14-4.58l-42.77-74a10.8 10.8 0 012.45-13.75l38.21-30a16.05 16.05 0 006-14.08c-.36-4.17-.58-8.33-.58-12.5s.21-8.27.58-12.35a16 16 0 00-6.07-13.94l-38.19-30A10.81 10.81 0 0149.48 186l42.77-74a10.81 10.81 0 0113.14-4.59l44.9 18.08a16.11 16.11 0 0015.17-1.75A164.48 164.48 0 01187 111.2a15.94 15.94 0 008.82-12.14l6.73-47.89A11.08 11.08 0 01213.23 42h85.54a11.11 11.11 0 0110.69 8.87l6.72 47.82a16.07 16.07 0 009 12.22 155.3 155.3 0 0121.46 12.57 16 16 0 0015.11 1.71l44.89-18.07a10.81 10.81 0 0113.14 4.58l42.77 74a10.8 10.8 0 01-2.45 13.75l-38.21 30a16.05 16.05 0 00-6.05 14.08c.33 4.14.55 8.3.55 12.47z"></path></svg>
+                            <span>تنظیمات</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="logout">
+                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path></svg>
+                            <span>خروج</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <!-- محتوای اصلی -->
+    <div class="content">
+        <div class="container">
+            <!-- بخش نوبار -->
+            <nav class="content-nav">
+                <div class="content-nav-right">
+                    <h1>داشبورد</h1>
+                    <p>جزئیات فروشگاه شما</p>
+                </div>
+                <div class="content-nav-left">
+                    <!-- بخش جستجو -->
+                    <div class="search-bar-wrapper">
+                        <form action="">
+                            <input type="text" placeholder="جستجو...">
+                        </form>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                        </svg>                      
+                    </div>
+                    <div class="left-nav">
+                        <!-- اعلان‌ها -->
+                        <a href="#" class="notifications">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M427.68 351.43C402 320 383.87 304 383.87 217.35 383.87 138 343.35 109.73 310 96c-4.43-1.82-8.6-6-9.95-10.55C294.2 65.54 277.8 48 256 48s-38.21 17.55-44 37.47c-1.35 4.6-5.52 8.71-9.95 10.53-33.39 13.75-73.87 41.92-73.87 121.35C128.13 304 110 320 84.32 351.43 73.68 364.45 83 384 101.61 384h308.88c18.51 0 27.77-19.61 17.19-32.57zM320 384v16a64 64 0 01-128 0v-16"></path></svg>            
+                        </a>
+                        <!-- حساب کاربری -->
+                        <div class="dropdown">
+                            <a href="#" class="btn dropdown-toggle my-account" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="./assets/img/profile.jpg" alt="">
+                                <div class="profile-info">
+                                    <strong>ماهان ع</strong>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                  </svg>   
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                    <a class="dropdown-item my-account-info" href="#">
+                                        <img src="./assets/img/profile.jpg" alt="">
+                                        <div class="profile-info">
+                                            <strong>ماهان عادلی</strong>
+                                            <p>fakemail@fake.com</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item my-account-item">
+                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M5 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm4-2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5ZM9 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 9 8Zm1 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5Z"></path><path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2ZM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8.96c.026-.163.04-.33.04-.5C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1.006 1.006 0 0 1 1 12V4Z"></path></svg>
+                                        <span>اطلاعات شخصی</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item my-account-item">
+                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M262.29 192.31a64 64 0 1057.4 57.4 64.13 64.13 0 00-57.4-57.4zM416.39 256a154.34 154.34 0 01-1.53 20.79l45.21 35.46a10.81 10.81 0 012.45 13.75l-42.77 74a10.81 10.81 0 01-13.14 4.59l-44.9-18.08a16.11 16.11 0 00-15.17 1.75A164.48 164.48 0 01325 400.8a15.94 15.94 0 00-8.82 12.14l-6.73 47.89a11.08 11.08 0 01-10.68 9.17h-85.54a11.11 11.11 0 01-10.69-8.87l-6.72-47.82a16.07 16.07 0 00-9-12.22 155.3 155.3 0 01-21.46-12.57 16 16 0 00-15.11-1.71l-44.89 18.07a10.81 10.81 0 01-13.14-4.58l-42.77-74a10.8 10.8 0 012.45-13.75l38.21-30a16.05 16.05 0 006-14.08c-.36-4.17-.58-8.33-.58-12.5s.21-8.27.58-12.35a16 16 0 00-6.07-13.94l-38.19-30A10.81 10.81 0 0149.48 186l42.77-74a10.81 10.81 0 0113.14-4.59l44.9 18.08a16.11 16.11 0 0015.17-1.75A164.48 164.48 0 01187 111.2a15.94 15.94 0 008.82-12.14l6.73-47.89A11.08 11.08 0 01213.23 42h85.54a11.11 11.11 0 0110.69 8.87l6.72 47.82a16.07 16.07 0 009 12.22 155.3 155.3 0 0121.46 12.57 16 16 0 0015.11 1.71l44.89-18.07a10.81 10.81 0 0113.14 4.58l42.77 74a10.8 10.8 0 01-2.45 13.75l-38.21 30a16.05 16.05 0 00-6.05 14.08c.33 4.14.55 8.3.55 12.47z"></path></svg>
+                                        <span>تنظیمات</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item my-account-item logout">
+                                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path></svg>
+                                        <span>خروج</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>  
+                </div>
+            </nav>
+            <main class="row content-main">
+                <!-- بخش اول: آنالیز‌ها -->
+                <div class="col-sm-12 analysis">
+                    <div class="col-lg-3 analysis-box orders-box">
+                        <div class="analysis-icon orders-icon">
+                            <svg stroke="currentColor" fill="none" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"></path></svg>
+                        </div>
+                        <div class="analysis-status orders-status">
+                            <h6>سفارش‌های تکمیل شده</h6>
+                            <span class="orders-count">۱/۲۷۴ هزار</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 analysis-box revenue-box">
+                        <div class="analysis-icon revenue-icon">
+                            <svg stroke="currentColor" fill="none" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"></path></svg>
+                        </div>
+                        <div class="analysis-status revenue-status">
+                            <h6>کل درآمد</h6>
+                            <span class="revenue-calc">۱۶۸ میلیون ریال</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 analysis-box visits-box">
+                        <div class="analysis-icon visits-icon">
+                            <svg stroke="currentColor" fill="none" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"></path></svg>
+                        </div>
+                        <div class="analysis-status visits-status">
+                            <h6>کل بازدیدها</h6>
+                            <span class="visits-count">۱/۲۷۴ هزار</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 analysis-box sales-box">
+                        <div class="analysis-icon sales-icon">
+                            <svg stroke="currentColor" fill="none" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"></path></svg>
+                        </div>
+                        <div class="analysis-status sales-status">
+                            <h6>کل فروش</h6>
+                            <span class="sales-calc">۱/۲۷۴ هزار</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-8 admins">               
+                    <div class="section-header admins-header">
+                        <div class="section-title admins-title">
+                            <h2>تیم مدیریت</h2>
+                        </div>
+                        <a href="#">
+                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M20 7h-9"></path><path d="M14 17H5"></path><circle cx="17" cy="17" r="3"></circle><circle cx="7" cy="7" r="3"></circle></svg>
+                        </a>
+                    </div>
+                    <div class="admins-actions">
+                        <div class="admins-status">
+                            <h6>ادمین‌ها و دسترسی‌های آن‌ها</h6>
+                            <div class="admins-table-container">
+                                <table class="admins-table">
+                                    <thead>
+                                        <tr>
+                                            <th>مشخصات</th>
+                                            <th>نام کاربری</th>
+                                            <th>مسئولیت</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="admins-table-body">
+                                        <tr>
+                                            <td>
+                                                <a href="#" class="admin-profile">
+                                                    <img src="./assets/img/profile.jpg" alt="">
+                                                    <div class="profile-info">
+                                                        <span>ماهان ع</span>
+                                                    </div> 
+                                                </a>
+                                            </td>
+                                            <td>#123456</td>
+                                            <td>
+                                                مدیر سایت
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#" class="admin-profile">
+                                                    <img src="./assets/img/profile.jpg" alt="">
+                                                    <div class="profile-info">
+                                                        <span>ماهان ع</span>
+                                                    </div> 
+                                                </a>
+                                            </td>
+                                            <td>#123456</td>
+                                            <td>
+                                                مدیر سایت
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#" class="admin-profile">
+                                                    <img src="./assets/img/profile.jpg" alt="">
+                                                    <div class="profile-info">
+                                                        <span>ماهان ع</span>
+                                                    </div> 
+                                                </a>
+                                            </td>
+                                            <td>#123456</td>
+                                            <td>
+                                                مدیر سایت
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <input type="submit" value="ذخیره" class="submit-btn">
+                        </div>
+                        <div class="add-admin">
+                            <h6>اضافه کردن ادمین</h6>
+                            <form class="admin-form">
+                                <label for="">
+                                    <input type="text" id="admin-name" placeholder="نام ادمین را وارد کنید...">
+                                </label>
+                                <label for="">
+                                    <input type="text" id="admin-username" placeholder="نام کاربری ادمین را وارد کنید...">
+                                </label>
+                                <label for="">
+                                    <span>جنسیت:</span>
+                                    <div class="checkboxes">
+                                        <span>مرد</span>
+                                        <input type="checkbox">
+                                        <span>زن</span>
+                                        <input type="checkbox">
+                                    </div>
+                                </label>
+                                <label for="">
+                                    <span>سطح دسترسی:</span>
+                                    <select name="role" id="add-admins-role">
+                                        <option value="" disabled selected>لطفا انتخاب کنید...</option>
+                                        <option value="مدیر سایت">مدیر سایت</option>
+                                        <option value="ادمین">ادمین</option>
+                                        <option value="ادمین تولید محتوا">ادمین تولید محتوا</option>
+                                        <option value="پشتیبانی">پشتیبانی</option>
+                                    </select>
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.976 10.072l4.357-4.357.62.618L8.284 11h-.618L3 6.333l.619-.618 4.357 4.357z"></path></svg>
+                                </label>
+                                <input type="submit" value="اضافه کردن" class="add-admin-btn">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-lg-3 store-visits">
+                    <div class="section-header visits-header">
+                        <div class="section-title visits-title">
+                            <h2>بازدیدهای فروشگاه</h2>
+                            <p>جزئیات بازدیدهای فروشگاه شما</p>
+                        </div>
+                        <a href="#">
+                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M20 7h-9"></path><path d="M14 17H5"></path><circle cx="17" cy="17" r="3"></circle><circle cx="7" cy="7" r="3"></circle></svg>
+                        </a>
+                    </div>
+                    <a href="#" class="visits-analytics">
+                        <div class="visits-icon">
+                            <svg stroke="currentColor" fill="none" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"></path></svg>
+                        </div>
+                        <div class="analytics-info">
+                            <p>تحلیل حرفه‌ای</p>
+                            <span class="analytics-price">1 میلیون تومان / ماهانه</span>
+                        </div>
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path></svg>
+                    </a>
+                    <div class="visits-info">
+                        <div class="visits-info-wrapper">
+                            <div class="visits-info-details">
+                                <span>آقایان</span>
+                                <span class="visits-percentage">30 درصد</span>
+                            </div>
+                            <div class="visits-progress-bar men"></div>
+                        </div>
+                        <div class="visits-info-wrapper">
+                            <div class="visits-info-details">
+                                <span>خانم‌ها</span>
+                                <span class="visits-percentage">70 درصد</span>
+                            </div>
+                            <div class="visits-progress-bar women"></div>
+                        </div>
+                        <div class="visits-info-wrapper">
+                            <div class="visits-info-details">
+                                <span>مهمان</span>
+                                <span class="visits-percentage">60 درصد</span>
+                            </div>
+                            <div class="visits-progress-bar guests"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-8 order-sm-3 order-md-4 top-products">
+                    <div class="section-header products-header">
+                        <div class="section-title products-title">
+                            <h2>محصولات برتر</h2>
+                            <p>پرفروش‌ترین‌های فروشگاه شما</p>
+                        </div>
+                        <a href="#">
+                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M20 7h-9"></path><path d="M14 17H5"></path><circle cx="17" cy="17" r="3"></circle><circle cx="7" cy="7" r="3"></circle></svg>
+                        </a>
+                    </div>
+                    <table class="products-table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    <input type="checkbox" id="all-products-check" class="products-check">
+                                    <label for="all-products-check"></label>
+                                </th>
+                                <th>نام محصول</th>
+                                <th class="hide-row">تاریخ اضافه‌ شدن</th>
+                                <th>قیمت</th>
+                                <th>مجموع درآمد</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" id="first-products-check" class="products-check">
+                                    <label for="first-products-check"></label>
+                                </td>
+                                <td>
+                                    <a href="#" class="products-name">
+                                        <img src="./assets/img/80626081789377c9f574dd4566c4300b298e141a_1681042710.jpg" alt="">
+                                        <span>
+                                            لپ تاپ 16 اینچ لنوو مدل Legion 5 Pro 16ACH6H R7 16GB 1SSD 3060 - کاستوم شده
+                                        </span>
+                                    </a>
+                                </td>
+                                <td class="hide-row">
+                                    <div class="products-date">
+                                        1 فروردین ۱۴۰۲
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="products-price">
+                                        20 میلیون ریال
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="products-earning">
+                                        200 میلیون ریال
+                                    </div>
+                                </td>
+                                <td>
+                                    <a href="#">
+                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M388.8 896.4v-27.198c.6-2.2 1.6-4.2 2-6.4 8.8-57.2 56.4-102.4 112.199-106.2 62.4-4.4 115.2 31.199 132.4 89.199 2.2 7.6 3.8 15.6 5.8 23.4v27.2c-.6 1.8-1.6 3.399-1.8 5.399-8.6 52.8-46.6 93-98.6 104.4-4 .8-8 2-12 3h-27.2c-1.8-.6-3.6-1.6-5.4-1.8-52-8.4-91.599-45.4-103.6-96.8-1.2-5-2.6-9.6-3.8-14.2zm252.4-768.797l-.001 27.202c-.6 2.2-1.6 4.2-1.8 6.4-9 57.6-56.8 102.6-113.2 106.2-62.2 4-114.8-32-131.8-90.2-2.2-7.401-3.8-15-5.6-22.401v-27.2c.6-1.8 1.6-3.4 2-5.2 9.6-52 39.8-86 90.2-102.2 6.6-2.2 13.6-3.4 20.4-5.2h27.2c1.8.6 3.6 1.6 5.4 1.8 52.2 8.6 91.6 45.4 103.6 96.8 1.201 4.8 2.401 9.4 3.601 13.999zm-.001 370.801v27.2c-.6 2.2-1.6 4.2-2 6.4-9 57.4-58.6 103.6-114.6 106-63 2.8-116.4-35.2-131.4-93.8-1.6-6.2-3-12.4-4.4-18.6v-27.2c.6-2.2 1.6-4.2 2-6.4 8.8-57.4 58.6-103.601 114.6-106.2 63-3 116.4 35.2 131.4 93.8 1.6 6.4 3 12.6 4.4 18.8z"></path></svg>
+
+                                    </a>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" id="second-products-check" class="products-check">
+                                    <label for="second-products-check"></label>
+                                </td>
+                                <td>
+                                    <a href="#" class="products-name">
+                                        <img src="./assets/img/ec9a962187e1f82cc47e7a148ef99ec1c6fd024d_1656423336.jpg" alt="">
+                                        <span>
+                                            گوشی موبایل اپل مدل iPhone 13 CH دو سیم‌ کارت ظرفیت 128 گیگابایت و رم 4 گیگابایت - نات اکتیو
+                                        </span>
+                                    </a>
+                                </td>
+                                <td class="hide-row">
+                                    <div class="products-date">
+                                        1 فروردین ۱۴۰۲
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="products-price">
+                                        20 میلیون ریال
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="products-earning">
+                                        200 میلیون ریال
+                                    </div>
+                                </td>
+                                <td>
+                                    <a href="#">
+                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M388.8 896.4v-27.198c.6-2.2 1.6-4.2 2-6.4 8.8-57.2 56.4-102.4 112.199-106.2 62.4-4.4 115.2 31.199 132.4 89.199 2.2 7.6 3.8 15.6 5.8 23.4v27.2c-.6 1.8-1.6 3.399-1.8 5.399-8.6 52.8-46.6 93-98.6 104.4-4 .8-8 2-12 3h-27.2c-1.8-.6-3.6-1.6-5.4-1.8-52-8.4-91.599-45.4-103.6-96.8-1.2-5-2.6-9.6-3.8-14.2zm252.4-768.797l-.001 27.202c-.6 2.2-1.6 4.2-1.8 6.4-9 57.6-56.8 102.6-113.2 106.2-62.2 4-114.8-32-131.8-90.2-2.2-7.401-3.8-15-5.6-22.401v-27.2c.6-1.8 1.6-3.4 2-5.2 9.6-52 39.8-86 90.2-102.2 6.6-2.2 13.6-3.4 20.4-5.2h27.2c1.8.6 3.6 1.6 5.4 1.8 52.2 8.6 91.6 45.4 103.6 96.8 1.201 4.8 2.401 9.4 3.601 13.999zm-.001 370.801v27.2c-.6 2.2-1.6 4.2-2 6.4-9 57.4-58.6 103.6-114.6 106-63 2.8-116.4-35.2-131.4-93.8-1.6-6.2-3-12.4-4.4-18.6v-27.2c.6-2.2 1.6-4.2 2-6.4 8.8-57.4 58.6-103.601 114.6-106.2 63-3 116.4 35.2 131.4 93.8 1.6 6.4 3 12.6 4.4 18.8z"></path></svg>
+
+                                    </a>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" id="third-products-check" class="products-check">
+                                    <label for="third-products-check"></label>
+                                </td>
+                                <td>
+                                    <a href="#" class="products-name">
+                                        <img src="./assets/img/80626081789377c9f574dd4566c4300b298e141a_1681042710.jpg" alt="">
+                                        <span>
+                                            لپ تاپ 16 اینچ لنوو مدل Legion 5 Pro 16ACH6H R7 16GB 1SSD 3060 - کاستوم شده
+                                        </span>
+                                    </a>
+                                </td>
+                                <td class="hide-row">
+                                    <div class="products-date">
+                                        1 فروردین ۱۴۰۲
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="products-price">
+                                        20 میلیون ریال
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="products-earning">
+                                        200 میلیون ریال
+                                    </div>
+                                </td>
+                                <td>
+                                    <a href="#">
+                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M388.8 896.4v-27.198c.6-2.2 1.6-4.2 2-6.4 8.8-57.2 56.4-102.4 112.199-106.2 62.4-4.4 115.2 31.199 132.4 89.199 2.2 7.6 3.8 15.6 5.8 23.4v27.2c-.6 1.8-1.6 3.399-1.8 5.399-8.6 52.8-46.6 93-98.6 104.4-4 .8-8 2-12 3h-27.2c-1.8-.6-3.6-1.6-5.4-1.8-52-8.4-91.599-45.4-103.6-96.8-1.2-5-2.6-9.6-3.8-14.2zm252.4-768.797l-.001 27.202c-.6 2.2-1.6 4.2-1.8 6.4-9 57.6-56.8 102.6-113.2 106.2-62.2 4-114.8-32-131.8-90.2-2.2-7.401-3.8-15-5.6-22.401v-27.2c.6-1.8 1.6-3.4 2-5.2 9.6-52 39.8-86 90.2-102.2 6.6-2.2 13.6-3.4 20.4-5.2h27.2c1.8.6 3.6 1.6 5.4 1.8 52.2 8.6 91.6 45.4 103.6 96.8 1.201 4.8 2.401 9.4 3.601 13.999zm-.001 370.801v27.2c-.6 2.2-1.6 4.2-2 6.4-9 57.4-58.6 103.6-114.6 106-63 2.8-116.4-35.2-131.4-93.8-1.6-6.2-3-12.4-4.4-18.6v-27.2c.6-2.2 1.6-4.2 2-6.4 8.8-57.4 58.6-103.601 114.6-106.2 63-3 116.4 35.2 131.4 93.8 1.6 6.4 3 12.6 4.4 18.8z"></path></svg>
+
+                                    </a>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-sm-5 col-lg-3 top-months">
+                    <div class="section-header months-header">
+                        <div class="section-title months-title">
+                            <h2>ماه‌های برتر</h2>
+                            <p>پرفروش‌ترین‌های ماه‌ها</p>
+                        </div>
+                        <a href="#">
+                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M20 7h-9"></path><path d="M14 17H5"></path><circle cx="17" cy="17" r="3"></circle><circle cx="7" cy="7" r="3"></circle></svg>
+                        </a>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="sales-chart" class="sales-chart" width="400" height="300"></canvas>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+    <script src="./components/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script
+      src="https://kit.fontawesome.com/8386d93875.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./components/chart.js/dist/chart.umd.js"></script>
+    <script src="./assets/js/chart.js"></script>
+</body>
+</html>
