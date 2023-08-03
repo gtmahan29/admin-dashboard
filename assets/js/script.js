@@ -1,84 +1,95 @@
-class Admin {
-    constructor(fullname, username, role) {
-        this.fullname = fullname;
-        this.username = username;
-        this.role = role;
+// داده‌های اولیه
+const admins = [
+    {
+        fullName: 'ماهان عادلی',
+        userName: '#123456',
+        role: 'مدیر سایت',
+        photo: 'profile.jpg'
+    },
+
+    {
+        fullName: 'ماهان عادلی 2',
+        userName: '#123456',
+        role: 'مدیر سایت',
+        photo: 'profile.jpg'
+    },
+
+    {
+        fullName: 'ماهان عادلی 3',
+        userName: '#123456',
+        role: 'مدیر سایت',
+        photo: 'profile.jpg'
     }
-}
-
-class AdminList {
-    constructor() {
-        this.admins = [];
-    }
-
-    addAdmin(admin) {
-        this.admins.push(admin);
-
-        this._updateUI();
-    }
-
-    removeAdmin(username) {
-        // موجود در آبجکتشون همون که به عنوان پراپرتی داده شده نباشه username ادمین‌هایی رو فیلتر کن که
-        this.admins = this.admins.filter((admin) => admin.username !== username);
-
-        this._updateUI();
-    }
-
-    _updateUI() {
-        const adminsTable = document.querySelector('.admins-table-body')
-        
-        this.admins.forEach((admin) => {
-            const row = adminsTable.insertRow();
-
-            const nameCell = row.insertCell();
-            nameCell.innerHTML = `
-            <a href="#" class="admin-profile">
-                <img src="./assets/img/profile.jpg" alt="">
-                <div class="profile-info">
-                    <span>${admin.fullname}</span>
-                </div> 
-            </a>
-            `;
-
-            const usernameCell = row.insertCell();
-            usernameCell.textContent = admin.username;
-
-            const roleCell = row.insertCell();
-            roleCell.textContent = admin.role;
-        })
-    }
-}
-
-class AddAdminForm {
-    constructor(adminList) {
-        this.adminList = adminList;
-        this.form = document.querySelector('.admin-form');
-        this.form.addEventListener('submit', this._addAdmin.bind(this));
-    }
-
-    _addAdmin(e) {
-        e.preventDefault();
-
-        const name = document.getElementById('admin-name').value;
-        const username = document.getElementById('admin-username').value;
-        const role = document.getElementById('add-admins-role').value;
-
-        const admin = new Admin(name, username, role);
-        this.adminList.addAdmin(admin);
-
-        this.form.reset()
-
-    }
-}
-
-const adminList = new AdminList();
-const addAdminForm = new AddAdminForm(adminList);
+];
 
 // المان‌ها
 const contentEl = document.querySelector('.content');
 const sidebarEl = document.querySelector('.sidebar');
 const sidebarBtn = document.querySelector('.sidebar-toggle');
 const logoEl = document.querySelector('.brand');
+const adminsTable = document.querySelector('.admins-table-body');
+const addBtn = document.querySelector('.add-admin-btn');
+const adminForm = document.querySelector('.admin-form');
+
+const adminName = document.getElementById('admin-name');
+const adminUserName = document.getElementById('admin-username');
+const adminRole = document.getElementById('admin-role');
+
+// توابع
+
+/**
+ * اضافه کردن ادمین به آرایه ادمین‌ها 
+ * @returns {void}
+ */
+function addAdmin() {
+    // یک آبجکت از ورودی‌های وارد شده میسازه
+    const newAdmin = {
+        fullName: adminName.value,
+        userName: adminUserName.value,
+        role: adminRole.value, 
+    };
+    
+    // آبجکت رو وارد آرایه میکنه
+    admins.push(newAdmin);
+}
+
+/**
+ * آپدیت کردن جدول نمایش ادمین‌ها
+ * @param {object[]} admins آرایه‌ای از آبجکت‌های هر ادمین
+ * @returns {void}
+ */
+function updateTable() {
+    adminsTable.innerHTML = '';
+
+    admins.forEach((admin) => {
+        // یک ردیف در جدول میسازه
+        const row = document.createElement('tr');
+        
+        // یک سلول در ردیف میسازه
+        const nameCell = document.createElement('td');
+        nameCell.innerHTML = `
+        <a href="#" class="admin-profile">
+            <img src="./assets/img/profile.jpg" alt="">
+            <div class="profile-info">
+                <span>${admin.fullName}</span>
+            </div> 
+        </a>
+        `
+        row.appendChild(nameCell);
+    
+        const userNameCell = document.createElement('td')
+        userNameCell.textContent = admin.userName;
+        row.appendChild(userNameCell);
+    
+        const roleCell = document.createElement('td')
+        roleCell.textContent = admin.role;
+        row.appendChild(roleCell);
+    
+        adminsTable.appendChild(row)
+    });
+}
+
+// توابع ایونت هندلر
 
 /**
  * سایدبار رو در اسکرین سایز زیر ۱۲۰۰ می‌بنده
@@ -118,13 +129,34 @@ function sidebarToggle() {
 }
 
 /**
+ * ادمین را اضافه و در صفحه نشان می‌دهد
+ * @param {Event} e 
+ */
+function showAdmin(e) {
+    e.preventDefault();
+
+    if (adminName.value === '' 
+    || adminUserName.value === '' 
+    || adminRole.value === '') {
+        alert('لطفا تمامی اطلاعات خواسته شده را وارد کنید')
+        return;
+    } else {
+        addAdmin();
+        updateTable();
+        adminForm.reset();
+    }
+} 
+
+/**
  * تابع شروع و اجرای توابع
  * @returns {void}
 */
 function init() {
+    updateTable();
     window.addEventListener('resize', handleSidebar);
     window.addEventListener('load', sidebarOnLoad);
     sidebarBtn.addEventListener('click', sidebarToggle);
+    adminForm.addEventListener('submit', showAdmin);
 }
 
 init();

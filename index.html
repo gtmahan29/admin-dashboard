@@ -90,7 +90,7 @@
                 <div class="content-nav-left">
                     <!-- بخش جستجو -->
                     <div class="search-bar-wrapper">
-                        <form action="">
+                        <form>
                             <input type="text" placeholder="جستجو...">
                         </form>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -208,48 +208,7 @@
                                         </tr>
                                     </thead>
                                     <tbody class="admins-table-body">
-                                        <tr>
-                                            <td>
-                                                <a href="#" class="admin-profile">
-                                                    <img src="./assets/img/profile.jpg" alt="">
-                                                    <div class="profile-info">
-                                                        <span>ماهان ع</span>
-                                                    </div> 
-                                                </a>
-                                            </td>
-                                            <td>#123456</td>
-                                            <td>
-                                                مدیر سایت
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <a href="#" class="admin-profile">
-                                                    <img src="./assets/img/profile.jpg" alt="">
-                                                    <div class="profile-info">
-                                                        <span>ماهان ع</span>
-                                                    </div> 
-                                                </a>
-                                            </td>
-                                            <td>#123456</td>
-                                            <td>
-                                                مدیر سایت
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <a href="#" class="admin-profile">
-                                                    <img src="./assets/img/profile.jpg" alt="">
-                                                    <div class="profile-info">
-                                                        <span>ماهان ع</span>
-                                                    </div> 
-                                                </a>
-                                            </td>
-                                            <td>#123456</td>
-                                            <td>
-                                                مدیر سایت
-                                            </td>
-                                        </tr>
+                                        
                                     </tbody>
                                 </table>
                             </div>
@@ -258,13 +217,13 @@
                         <div class="add-admin">
                             <h6>اضافه کردن ادمین</h6>
                             <form class="admin-form">
-                                <label for="">
+                                <label for="admin-name">
                                     <input type="text" id="admin-name" placeholder="نام ادمین را وارد کنید...">
                                 </label>
-                                <label for="">
+                                <label for="admin-username">
                                     <input type="text" id="admin-username" placeholder="نام کاربری ادمین را وارد کنید...">
                                 </label>
-                                <label for="">
+                                <div class="sexuality">
                                     <span>جنسیت:</span>
                                     <div class="checkboxes">
                                         <span>مرد</span>
@@ -272,10 +231,10 @@
                                         <span>زن</span>
                                         <input type="checkbox">
                                     </div>
-                                </label>
-                                <label for="">
+                                </div>
+                                <label for="admin-role">
                                     <span>سطح دسترسی:</span>
-                                    <select name="role" id="add-admins-role">
+                                    <select name="role" id="admin-role">
                                         <option value="" disabled selected>لطفا انتخاب کنید...</option>
                                         <option value="مدیر سایت">مدیر سایت</option>
                                         <option value="ادمین">ادمین</option>

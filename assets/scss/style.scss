@@ -687,7 +687,7 @@ button {
                                 .admin-profile {
                                     display: flex;
                                     align-items: center;
-                                    justify-content: center;
+                                    justify-content: flex-start;
 
                                     img {
                                         width: 25px;
@@ -823,6 +823,23 @@ button {
                             gap: 20px;
                             font-size: 12px;
 
+                            .sexuality {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                            }
+
+                            .checkboxes {
+                                input {
+                                    vertical-align: middle;
+                                    box-shadow: none;
+                                }
+
+                                span {
+                                    margin-right: .5rem;
+                                }
+                            }
+
                             label {
                                 position: relative;
                                 display: flex;
@@ -858,34 +875,19 @@ button {
                                     }
                                 }
 
-                                &:nth-child(3) {
-                                    justify-content: space-between;
-                                    align-items: center;
-
-                                }
 
                                 &:nth-child(4) {
                                     justify-content: space-between;
                                     align-items: center;
                                 }
 
-                                .checkboxes {
-                                    input {
-                                        vertical-align: middle;
-                                        box-shadow: none;
-                                    }
-
-                                    span {
-                                        margin-right: .5rem;
-                                    }
-                                }
 
                                 span {
                                     color: #888;
                                     font-size: 11px;
                                 }
 
-                                #add-admins-role {
+                                #admin-role {
                                     padding: 5px 6px;
                                     border-radius: 4px;
                                     -webkit-appearance: none;
